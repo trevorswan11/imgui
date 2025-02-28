@@ -3834,9 +3834,9 @@ void ImGui::GcAwakeTransientWindowBuffers(ImGuiWindow* window)
 void ImGui::SetActiveID(ImGuiID id, ImGuiWindow* window)
 {
     ImGuiContext& g = *GImGui;
+    window = GetCurrentWindow();
 
-
-    for (int i = 0; i < window->DC.Layouts.Data.Size; i++)
+    for (int i = 0; window != NULL && i < window->DC.Layouts.Data.Size; i++)
     {
         ImGuiLayout* layout = (ImGuiLayout*)window->DC.Layouts.Data[i].val_p;
         IM_DELETE(layout);
