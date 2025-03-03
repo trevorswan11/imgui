@@ -48,13 +48,13 @@ examples/example_null/example_null
 examples/example_sdl_opengl2/example_sdl_opengl2
 examples/example_sdl_opengl3/example_sdl_opengl3
 
-# Hazel-specific
+# Lithe-specific
 # Directories
 bin/
 bin-int/
 
  # Files
-Makefile 
+Makefile
 
 # Visual Studio files and folder
 *.sln
